@@ -8,6 +8,7 @@
 
 #import "ALAAppDelegate.h"
 #import "ALAiPadViewController.h"
+#import "ALAiPhoneTVC.h"
 
 @implementation ALAAppDelegate
 
@@ -27,14 +28,13 @@
         
     }else{
         
-        UITableViewController * tvc = [[UITableViewController alloc]initWithStyle:UITableViewStylePlain];
+        ALAiPhoneTVC * tvc = [[ALAiPhoneTVC alloc]initWithStyle:UITableViewStylePlain];
         
         [nc pushViewController:tvc animated:NO];
         
         self.window.rootViewController = nc;
 
     }
-    
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

@@ -7,6 +7,9 @@
 //
 
 #import "ALAiPadViewController.h"
+#import "ALAiPadTVC.h"
+#import "ALAData.h"
+#import "ALATableViewCell.h"
 
 @interface ALAiPadViewController () <UISplitViewControllerDelegate>
 
@@ -14,9 +17,10 @@
 
 @implementation ALAiPadViewController
 {
-    UITableViewController * listVC;
+    ALAiPadTVC * listVC;
     UIViewController * detailVC;
     UINavigationController * nc;
+    UILabel * name;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -29,13 +33,16 @@
         
         nc = [[UINavigationController alloc]initWithRootViewController:detailVC];
         
-        listVC = [[UITableViewController alloc]initWithStyle:UITableViewStylePlain];
+        listVC = [[ALAiPadTVC alloc]initWithStyle:UITableViewStylePlain];
         
         self.viewControllers = @[listVC, nc];
         
         self.presentsWithGesture = YES;
         
         self.delegate = self;
+        
+        self.view.backgroundColor = [UIColor orangeColor];
+        
     }
     return self;
 }
@@ -44,7 +51,7 @@
 {
     barButtonItem.title = @"Button";
     detailVC.navigationItem.rightBarButtonItem = barButtonItem;
-    nc.navigationController.navigationBarHidden = NO;
+    detailVC.navigationController.navigationBarHidden = NO;
     nc.navigationBar.barTintColor = [UIColor purpleColor];
     
     NSLog(@"hide");
@@ -60,7 +67,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    name = [[UILabel alloc] initWithFrame:CGRectMake(20, 100, 200, 30)];
+    name.textColor = [UIColor darkGrayColor];
+    name.backgroundColor = [UIColor lightGrayColor];
+    name.font = [UIFont systemFontOfSize: 20];
+    
+    
+    [detailVC.view addSubview:name];
+    
+    
+    
     // Do any additional setup after loading the view.
+}
+
+-(void)setIndex:(NSInteger)index
+{
+    _index = index;
+    
+    NSDictionary * albumInfo = [[ALAData MainData] allListItems][index];
+    
+    name.text = albumInfo[@"Album Name"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,6 +95,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 /*
 #pragma mark - Navigation

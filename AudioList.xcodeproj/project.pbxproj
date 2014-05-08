@@ -20,6 +20,11 @@
 		B0C448B0191BB92800DDEC5B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0C448AE191BB92800DDEC5B /* InfoPlist.strings */; };
 		B0C448B2191BB92800DDEC5B /* AudioListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C448B1191BB92800DDEC5B /* AudioListTests.m */; };
 		B0C448BD191BC54000DDEC5B /* ALAiPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C448BC191BC54000DDEC5B /* ALAiPadViewController.m */; };
+		B0C448C0191BF32E00DDEC5B /* ALAData.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C448BF191BF32E00DDEC5B /* ALAData.m */; };
+		B0C448C3191BF50200DDEC5B /* ALAiPadTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C448C2191BF50200DDEC5B /* ALAiPadTVC.m */; };
+		B0C448C6191BF51700DDEC5B /* ALAiPhoneTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C448C5191BF51700DDEC5B /* ALAiPhoneTVC.m */; };
+		B0C448C9191BFD6D00DDEC5B /* ALATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C448C8191BFD6D00DDEC5B /* ALATableViewCell.m */; };
+		B0C448CE191C38E600DDEC5B /* ALAiPhoneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C448CD191C38E600DDEC5B /* ALAiPhoneVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		B0C448B1191BB92800DDEC5B /* AudioListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioListTests.m; sourceTree = "<group>"; };
 		B0C448BB191BC54000DDEC5B /* ALAiPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAiPadViewController.h; sourceTree = "<group>"; };
 		B0C448BC191BC54000DDEC5B /* ALAiPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAiPadViewController.m; sourceTree = "<group>"; };
+		B0C448BE191BF32E00DDEC5B /* ALAData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALAData.h; path = ../ALAData.h; sourceTree = "<group>"; };
+		B0C448BF191BF32E00DDEC5B /* ALAData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALAData.m; path = ../ALAData.m; sourceTree = "<group>"; };
+		B0C448C1191BF50200DDEC5B /* ALAiPadTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAiPadTVC.h; sourceTree = "<group>"; };
+		B0C448C2191BF50200DDEC5B /* ALAiPadTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAiPadTVC.m; sourceTree = "<group>"; };
+		B0C448C4191BF51700DDEC5B /* ALAiPhoneTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAiPhoneTVC.h; sourceTree = "<group>"; };
+		B0C448C5191BF51700DDEC5B /* ALAiPhoneTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAiPhoneTVC.m; sourceTree = "<group>"; };
+		B0C448C7191BFD6D00DDEC5B /* ALATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALATableViewCell.h; path = ../ALATableViewCell.h; sourceTree = "<group>"; };
+		B0C448C8191BFD6D00DDEC5B /* ALATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALATableViewCell.m; path = ../ALATableViewCell.m; sourceTree = "<group>"; };
+		B0C448CC191C38E600DDEC5B /* ALAiPhoneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAiPhoneVC.h; sourceTree = "<group>"; };
+		B0C448CD191C38E600DDEC5B /* ALAiPhoneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAiPhoneVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +95,10 @@
 		B0C44880191BB92800DDEC5B = {
 			isa = PBXGroup;
 			children = (
+				B0C448CB191C38B100DDEC5B /* iPhone */,
+				B0C448CA191C38A000DDEC5B /* iPad */,
+				B0C448C1191BF50200DDEC5B /* ALAiPadTVC.h */,
+				B0C448C2191BF50200DDEC5B /* ALAiPadTVC.m */,
 				B0C448BB191BC54000DDEC5B /* ALAiPadViewController.h */,
 				B0C448BC191BC54000DDEC5B /* ALAiPadViewController.m */,
 				B0C44892191BB92800DDEC5B /* AudioList */,
@@ -112,6 +131,10 @@
 		B0C44892191BB92800DDEC5B /* AudioList */ = {
 			isa = PBXGroup;
 			children = (
+				B0C448BE191BF32E00DDEC5B /* ALAData.h */,
+				B0C448BF191BF32E00DDEC5B /* ALAData.m */,
+				B0C448C7191BFD6D00DDEC5B /* ALATableViewCell.h */,
+				B0C448C8191BFD6D00DDEC5B /* ALATableViewCell.m */,
 				B0C4489B191BB92800DDEC5B /* ALAAppDelegate.h */,
 				B0C4489C191BB92800DDEC5B /* ALAAppDelegate.m */,
 				B0C4489E191BB92800DDEC5B /* Images.xcassets */,
@@ -147,6 +170,24 @@
 				B0C448AE191BB92800DDEC5B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0C448CA191C38A000DDEC5B /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		B0C448CB191C38B100DDEC5B /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				B0C448C4191BF51700DDEC5B /* ALAiPhoneTVC.h */,
+				B0C448C5191BF51700DDEC5B /* ALAiPhoneTVC.m */,
+				B0C448CC191C38E600DDEC5B /* ALAiPhoneVC.h */,
+				B0C448CD191C38E600DDEC5B /* ALAiPhoneVC.m */,
+			);
+			name = iPhone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,9 +286,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C448C9191BFD6D00DDEC5B /* ALATableViewCell.m in Sources */,
+				B0C448C0191BF32E00DDEC5B /* ALAData.m in Sources */,
+				B0C448C6191BF51700DDEC5B /* ALAiPhoneTVC.m in Sources */,
+				B0C448CE191C38E600DDEC5B /* ALAiPhoneVC.m in Sources */,
 				B0C44899191BB92800DDEC5B /* main.m in Sources */,
 				B0C4489D191BB92800DDEC5B /* ALAAppDelegate.m in Sources */,
 				B0C448BD191BC54000DDEC5B /* ALAiPadViewController.m in Sources */,
+				B0C448C3191BF50200DDEC5B /* ALAiPadTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +492,7 @@
 				B0C448B7191BB92800DDEC5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0C448B8191BB92800DDEC5B /* Build configuration list for PBXNativeTarget "AudioListTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +501,7 @@
 				B0C448BA191BB92800DDEC5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
