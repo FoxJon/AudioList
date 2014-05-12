@@ -7,6 +7,9 @@
 //
 
 #import "ALAiPadViewController.h"
+#import "ALASoundCloudRequest.h"
+#import "ALAiPadTableViewController.h"
+
 
 @interface ALAiPadViewController () <UISplitViewControllerDelegate>
 
@@ -14,7 +17,7 @@
 
 @implementation ALAiPadViewController
 {
-    UITableViewController * listVC;
+    ALAiPadTableViewController * listVC;
     UIViewController * detailVC;
     UINavigationController * nc;
 }
@@ -29,13 +32,17 @@
         
         nc = [[UINavigationController alloc]initWithRootViewController:detailVC];
         
-        listVC = [[UITableViewController alloc]initWithStyle:UITableViewStylePlain];
+        // listVC: tab bar at bottom with tracks & playlists buttons. playlist will push in.
+        
+        listVC = [[ALAiPadTableViewController alloc]initWithStyle:UITableViewStylePlain];
         
         self.viewControllers = @[listVC, nc];
         
         self.presentsWithGesture = YES;
         
         self.delegate = self;
+        
+        [ALASoundCloudRequest updateData];
     }
     return self;
 }
@@ -47,12 +54,10 @@
     nc.navigationController.navigationBarHidden = NO;
     nc.navigationBar.barTintColor = [UIColor purpleColor];
     
-    NSLog(@"hide");
 }
 
 - (void)splitViewController:(UISplitViewController *)svc willShowViewController:(UIViewController *)aViewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
 {
-    NSLog(@"show");
     nc.navigationBarHidden = YES;
 
 }
