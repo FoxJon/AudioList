@@ -10,4 +10,9 @@
 
 @interface ALAiPadViewController : UISplitViewController
 
+@property(nonatomic, copy) NSArray *viewControllers;
+
+@property (nonatomic) NSInteger songIndex;
+
+
 @end

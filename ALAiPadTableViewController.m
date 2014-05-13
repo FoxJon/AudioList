@@ -82,6 +82,13 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    self.detailVC.songIndex = indexPath.row;
+    
+    
+    
+}
 
 /*
 // Override to support conditional editing of the table view.

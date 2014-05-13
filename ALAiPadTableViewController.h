@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ALAiPadViewController.h"
 
 @interface ALAiPadTableViewController : UITableViewController
+
+@property (nonatomic) ALAiPadViewController * detailVC;
 
 @end

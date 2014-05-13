@@ -9,6 +9,7 @@
 #import "ALAiPadViewController.h"
 #import "ALASoundCloudRequest.h"
 #import "ALAiPadTableViewController.h"
+#import "ALAData.h"
 
 
 @interface ALAiPadViewController () <UISplitViewControllerDelegate>
@@ -20,6 +21,7 @@
     ALAiPadTableViewController * listVC;
     UIViewController * detailVC;
     UINavigationController * nc;
+    UIView * songInfoFrame;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -27,22 +29,34 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        songInfoFrame = [[UIView alloc]initWithFrame:CGRectMake(380, 105, 600, 600)];
+        songInfoFrame.backgroundColor = [UIColor lightGrayColor];
+        [self.view addSubview:songInfoFrame];
+        
+        UITableViewController * playlistVC = [[UITableViewController alloc]initWithNibName:nil bundle:nil];
         
         detailVC = [[UIViewController alloc]initWithNibName:nil bundle:nil];
         
         nc = [[UINavigationController alloc]initWithRootViewController:detailVC];
         
-        // listVC: tab bar at bottom with tracks & playlists buttons. playlist will push in.
-        
         listVC = [[ALAiPadTableViewController alloc]initWithStyle:UITableViewStylePlain];
         
-        self.viewControllers = @[listVC, nc];
+        UITabBarController *tbc = [[UITabBarController alloc] init];
+        tbc.viewControllers = @[listVC, playlistVC];
+        
+        listVC.tabBarItem = [[UITabBarItem alloc]initWithTabBarSystemItem:UITabBarSystemItemFeatured tag:0];
+        playlistVC.tabBarItem = [[UITabBarItem alloc]initWithTabBarSystemItem:UITabBarSystemItemBookmarks tag:1];
+        
+        self.viewControllers = @[tbc, nc];
         
         self.presentsWithGesture = YES;
         
         self.delegate = self;
         
         [ALASoundCloudRequest updateData];
+        
+        
+        
     }
     return self;
 }
@@ -72,6 +86,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)setSongIndex:(NSInteger)songIndex
+{
+    NSArray * trackInfo = [[ALAData mainData]allTracks];
+    NSLog(@"%@", trackInfo);
 }
 
 /*

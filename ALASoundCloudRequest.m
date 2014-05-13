@@ -62,9 +62,9 @@
                 [[ALAData mainData] addNewUser:user];
             }
         }
-        NSLog(@"%@",[[ALAData mainData] allTracks]);
-        NSLog(@"%@",[[ALAData mainData] allUsers]);
-        NSLog(@"%@",[[ALAData mainData] allPlaylists]);
+     //   NSLog(@"%@",[[ALAData mainData] allTracks]);
+     //   NSLog(@"%@",[[ALAData mainData] allUsers]);
+     //   NSLog(@"%@",[[ALAData mainData] allPlaylists]);
         
         NSNotificationCenter * nCenter = [NSNotificationCenter defaultCenter];
         [nCenter postNotificationName:@"dataUpdated" object:nil];

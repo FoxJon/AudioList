@@ -13,7 +13,6 @@
 		B068463419211BBB00748F8C /* ALAiPadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B068463319211BBB00748F8C /* ALAiPadTableViewController.m */; };
 		B068463A192136BC00748F8C /* ALAiPhoneTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B0684637192136BC00748F8C /* ALAiPhoneTVC.m */; };
 		B068463B192136BC00748F8C /* ALAiPhoneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B0684639192136BC00748F8C /* ALAiPhoneVC.m */; };
-		B0684647192138A600748F8C /* ALATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0684646192138A600748F8C /* ALATableViewCell.m */; };
 		B068464A1921393600748F8C /* ALADictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = B06846491921393600748F8C /* ALADictionary.m */; };
 		B068464D19213A1C00748F8C /* ALAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B068464C19213A1C00748F8C /* ALAUser.m */; };
 		B068465019213A5E00748F8C /* ALAPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = B068464F19213A5E00748F8C /* ALAPlaylist.m */; };
@@ -55,8 +54,6 @@
 		B0684637192136BC00748F8C /* ALAiPhoneTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAiPhoneTVC.m; sourceTree = "<group>"; };
 		B0684638192136BC00748F8C /* ALAiPhoneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAiPhoneVC.h; sourceTree = "<group>"; };
 		B0684639192136BC00748F8C /* ALAiPhoneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAiPhoneVC.m; sourceTree = "<group>"; };
-		B0684645192138A600748F8C /* ALATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALATableViewCell.h; sourceTree = "<group>"; };
-		B0684646192138A600748F8C /* ALATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALATableViewCell.m; sourceTree = "<group>"; };
 		B06846481921393600748F8C /* ALADictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALADictionary.h; sourceTree = "<group>"; };
 		B06846491921393600748F8C /* ALADictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALADictionary.m; sourceTree = "<group>"; };
 		B068464B19213A1C00748F8C /* ALAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAUser.h; sourceTree = "<group>"; };
@@ -166,8 +163,6 @@
 		B0C44880191BB92800DDEC5B = {
 			isa = PBXGroup;
 			children = (
-				B0684645192138A600748F8C /* ALATableViewCell.h */,
-				B0684646192138A600748F8C /* ALATableViewCell.m */,
 				B06846351921354C00748F8C /* iPhone */,
 				B068462D192104B000748F8C /* Requests */,
 				B06846251920FFFD00748F8C /* Models */,
@@ -339,7 +334,6 @@
 				B0C44899191BB92800DDEC5B /* main.m in Sources */,
 				B068463419211BBB00748F8C /* ALAiPadTableViewController.m in Sources */,
 				B068463B192136BC00748F8C /* ALAiPhoneVC.m in Sources */,
-				B0684647192138A600748F8C /* ALATableViewCell.m in Sources */,
 				B0C4489D191BB92800DDEC5B /* ALAAppDelegate.m in Sources */,
 				B068465019213A5E00748F8C /* ALAPlaylist.m in Sources */,
 				B0C448BD191BC54000DDEC5B /* ALAiPadViewController.m in Sources */,

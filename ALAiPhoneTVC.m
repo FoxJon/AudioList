@@ -8,7 +8,6 @@
 
 #import "ALAiPhoneTVC.h"
 #import "ALAData.h"
-#import "ALATableViewCell.h"
 #import "ALAiPhoneVC.h"
 
 @interface ALAiPhoneTVC ()
