@@ -85,9 +85,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     self.detailVC.songIndex = indexPath.row;
-    
-    
-    
 }
 
 /*
